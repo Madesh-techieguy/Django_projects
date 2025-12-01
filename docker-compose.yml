@@ -11,6 +11,7 @@ services:
       - .env
 
 networks:
-     default:
-        name:django_todo_net
+  default:
+     name: django_todo_net
+
 
