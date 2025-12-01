@@ -6,8 +6,11 @@ services:
     container_name: django_todo
     command: python manage.py runserver 0.0.0.0:8090
     ports:
-      - "${APP_PORT}:5050"
+      - "${APP_PORT}:8090"
     env_file:
       - .env
 
 networks:
+     default:
+        name:django_todo_net
+

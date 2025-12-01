@@ -19,8 +19,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # COPY todo_site/ ./todo_site/
 
 # 7. Expose Django port
-EXPOSE 5050
+EXPOSE 8090
 
 # 8. Default command (development server)
-CMD ["python", "manage.py", "runserver", "0.0.0.0:5050"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8090"]
 
